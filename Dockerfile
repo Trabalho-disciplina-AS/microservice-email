@@ -3,5 +3,5 @@ WORKDIR /app
 COPY package*.json ./
 RUN npm install
 COPY . .
-EXPOSE 3000
-CMD ["node", "send_email.js"]
+EXPOSE 4005
+CMD ["npm", "start"]

@@ -3,7 +3,7 @@ const nodemailer = require('nodemailer');
 const express = require('express')
 const bodyParser = require('body-parser');
 const app = express()
-const port = 3000
+const port = 4005
 
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json())
@@ -32,7 +32,7 @@ app.post('/', (req, res) => {
         text: constructMessage(req.body.name, req.body.email, req.body.telefone, req.body.message),
     }
 
-    transporter.sendMail(emailProcess, function (error, info) {
+    transporter.sendMail(emailProcess, function(error, info) {
         if (error) {
             console.log(error);
             res.status(400).send('Problem to sent')

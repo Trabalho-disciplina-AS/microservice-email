@@ -1,20 +1,20 @@
 {
-  "name": "send_email",
-  "version": "1.0.0",
-  "description": "",
-  "main": "send_email.js",
-  "scripts": {
-    "dev": "nodemon send_email.js"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "dependencies": {
-    "dotenv": "^8.2.0",
-    "express": "^4.17.1",
-    "nodemailer": "^6.4.11"
-  },
-  "devDependencies": {
-    "nodemon": "^2.0.4"
-  }
+    "name": "send_email",
+    "version": "1.0.0",
+    "description": "",
+    "main": "send_email.js",
+    "scripts": {
+        "start": "nodemon send_email"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "dependencies": {
+        "dotenv": "^8.2.0",
+        "express": "^4.17.1",
+        "nodemailer": "^6.4.11"
+    },
+    "devDependencies": {
+        "nodemon": "^2.0.4"
+    }
 }
