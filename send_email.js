@@ -4,9 +4,11 @@ const express = require('express')
 const bodyParser = require('body-parser');
 const app = express()
 const port = 4005
+var cors = require('cors');
 
 app.use(bodyParser.urlencoded({ extended: false }));
-app.use(bodyParser.json())
+app.use(bodyParser.json());
+app.use(cors());
 
 var transporter = nodemailer.createTransport({
     service: 'gmail',
